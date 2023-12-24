@@ -1,0 +1,47 @@
+* {
+  font-family: sans-serif;
+}
+.App {
+  background-color: rgb(213, 194, 159);
+  padding: 20px;
+  padding-bottom: 50px;
+}
+input,
+button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input {
+  display: block;
+  margin-bottom: 20px;
+}
+
+button {
+  border: 1px solid gray;
+  background: whitesmoke;
+  margin-right: 5px;
+}
+
+button:nth-last-child(2),
+button:nth-last-child(1) {
+  background: tomato;
+  color: white;
+}
+div {
+  border-radius: 1px solid black;
+}
+
+.js-btn{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: start;
+}
+
+.js-btn button {
+  flex: 0 0 calc(25% - 8px); 
+  margin-bottom: 8px;
+}
