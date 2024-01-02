@@ -1,1 +1,1 @@
-Delving into the intricacies of React application
+Delving into the intricacies of React
