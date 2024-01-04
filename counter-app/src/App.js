@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import TempChange from "./temp";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { counter: 0 };
+    this.state={counter: 0};
   }
 
   increment=() =>{
@@ -26,6 +27,8 @@ class App extends React.Component {
         <button onClick={this.decrement} className="decrement">-</button>
 
         <h2>{this.state.counter}</h2>
+
+        <TempChange/>
       </div>
     );
   }
