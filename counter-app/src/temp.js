@@ -1,36 +1,49 @@
 import React, { useState } from "react";
 function TempChange(props) {
-        const [temp, setTemp]=useState( 10 );
+    const [tempValue, setTempValue] = useState(10);
     const [tempColor, setTempColor]=useState( "cold" );
     
     const increaseTemp=() => {
-        const newTemp=temp+1;
-        if (newTemp >= 15) {
-            setTempColor("hot")
+        const newTemp=tempValue+1;
+        
+        if ( newTemp > 14 ) {
+            setTempColor("hot");
         }
-        setTemp(newTemp)
+    setTempValue(newTemp);
     }
 
     const decreaseTemp=() => {
-        const newTemp=temp-1;
-        if (newTemp <= 14) {
-            setTempColor("cold")
+        const newTemp=tempValue-1;
+        setTempValue( newTemp );
+
+        if ( newTemp <= 14 ) {
+            setTempColor("cold");
         }
-        setTemp(newTemp)
+     setTempValue(newTemp);
     }
-        
+
     return (
         <div className="app-container">
             <div className="temp-display-container">
-                <div className={`temp ${tempColor}`}>{temp}°C</div>
-                <button className="temp-btn" onClick={() => increaseTemp()}>
-                    +
-                </button>
-                <button className="temp-btn" onClick={() => decreaseTemp()}>
-                    -
-                </button>
+                <div className={`temp-value ${tempColor}`}>{tempValue}°c</div>
             </div>
-            <button className="reset-btn" onClick={() => setTemp(10)}>Reset</button>
+            <div className="temp-btn-container">
+                <div>
+                    <button
+                        className="temp-btn"
+                        onClick={() => increaseTemp()}
+                    >
+                        +
+                    </button>
+                    <button
+                        className="temp-btn"
+                        onClick={() => decreaseTemp()}
+                    >
+                        -
+                    </button>
+                </div>
+            </div>
+            <button className="reset-btn">Reset</button>
         </div>
     );
 }
