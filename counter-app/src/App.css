@@ -60,3 +60,18 @@
   border-radius: 50%;
     cursor: pointer;
 }
+
+.reset-btn {
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: grey;
+}
+
+.cold {
+background-color: #035aa6;
+}
+
+.hot {
+  background-color: #ff5200;
+}
