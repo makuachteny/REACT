@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import TempChange from "./temp";
+import TempChange from "./Temp";
 
 class App extends React.Component {
   constructor(props) {
