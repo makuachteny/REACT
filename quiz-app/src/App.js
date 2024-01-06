@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const questions = [
@@ -62,6 +62,7 @@ function App() {
 
   return (
     <div className="app">
+      <Navbar />
       {/* HINT: replace "false" with logic to display the
       score when the user has answered all the questions */}
       {showScore ? (
