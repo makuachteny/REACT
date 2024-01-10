@@ -14,4 +14,4 @@ const MealsProvider=( {children} ) => {
 
 export const useMealsListContext=() => React.useContext( MealsContext );
 
-export default MealsProvider 
+export default MealsProvider
